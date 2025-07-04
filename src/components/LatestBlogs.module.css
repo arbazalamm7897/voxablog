@@ -1,0 +1,45 @@
+.latest {
+  margin: 1rem;
+}
+
+.latest h2 {
+  color: hotpink;
+}
+
+.blog {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #c3b9f7;
+  border-radius: 0.2rem;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.blog img {
+  width: 150px;        /* Fixed width */
+  height: 100px;       /* Fixed height */
+  object-fit: cover;   /* Crop nicely */
+  border-radius: 0.5rem;
+}
+
+
+
+.blogText h3 {
+  margin: 0;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .blog {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .blog img {
+    width: 100%;
+    height: auto;
+    margin-top: 0.5rem;
+  }
+}
